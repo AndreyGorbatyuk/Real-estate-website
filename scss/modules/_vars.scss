@@ -1,0 +1,59 @@
+@use 'sass:map';
+@use 'sass:math';
+$_breakpoints: (
+	'1920': 119.99875em,
+	'1680': 104.99875em,
+	'1440': 89.99875em,
+	'1366': 85.37375em,
+	'1280':79.99875em,
+	'1200': 74.99875em,
+	'1100': 68.74875em,
+	'1024': 63.9375em,
+	'992': 61.99875em,
+	'800': 49.99875em,
+	'768': 47.99875em,
+	'600': 37.49875em,
+	'576': 35.99875em,
+	'480': 30.06125em,
+	'425': 26.56125em,
+	'375':23.43625em,
+	'320': 19.99875em
+);
+// ---------------Breakpoints---------------
+$breakpoint1366: map.get($_breakpoints, '1366');
+$breakpoint1200: map.get($_breakpoints, '1200');
+$breakpoint1024: map.get($_breakpoints, '1024');
+$breakpoint992: map.get($_breakpoints, '992');
+$breakpoint768: map.get($_breakpoints, '768');
+$breakpoint576: map.get($_breakpoints, '576');
+$breakpoint425: map.get($_breakpoints, '425');
+$breakpoint320: map.get($_breakpoints, '320');
+// ---------------Container size---------------
+$containerWidth: 1200;
+$containerPadding: 30;
+$containerSidePadding: math.div($containerPadding, 2) + px;
+// ---------------Fonts---------------
+$mainFont: 'Nunito Sans';
+$secondaryFont:'Poppins';
+$tertiaryFont: 'Inter';
+// ---------------Colors---------------
+// primary
+$primaryColor80: #155C3F;
+$primaryColor70: #27AD77;
+$primaryColor50: #61DBAA;
+$primaryColor30: #8AE5C0;
+$primaryColor10: #DEF8ED;
+
+// secondary
+$secondaryColor80: #853F00;
+$secondaryColor70: #EB7000;
+$secondaryColor50: #FF8A20;
+$secondaryColor30: #FFBF85;
+$secondaryColor10: #FFDAB8;
+
+// tertiary
+$tertiaryNavy: #123763;
+$tertiaryDarkGray: #6D6D6D;
+$tertiaryGray: #CCCCCC;
+$tertiaryLightgray: #E6E6E6;
+$tertiaryWhite: #ffffff;

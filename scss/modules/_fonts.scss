@@ -1,0 +1,16 @@
+@use './libs/mixins' as mix;
+
+// @include mix.font('имя_шрифта', 'название_файла_шрифта', 400, 'normal'); - файлы шроифтов только woff и woff
+@include mix.font('Nunito Sans', NunitoSans-Bold, 700);
+@include mix.font('Nunito Sans', NunitoSans-SemiBold, 600);
+@include mix.font('Inter', Inter-Regular);
+@include mix.font('Poppins', Poppins-Regular);
+@include mix.font('Poppins', Poppins-Medium, 500);
+@include mix.font('Poppins', Poppins-SemiBold, 600);
+@font-face {
+	font-family: 'Raleway';
+	font-display: swap;
+	src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}

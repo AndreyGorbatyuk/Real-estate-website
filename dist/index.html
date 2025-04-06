@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<title>Home</title>
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<div class="header__container container">
+				<a href="index.html" class="header__logo"><img src="img/icons/logo_dummy.svg" alt="logo"></a>
+				<button class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<nav class="header__navigation">
+					<button class="header__navigation-close-btn">
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="header__navigation-list">
+						<li class="header__navigation-item header__navigation-item--active"><a href="index.html" class="header__navigation-link">Home</a></li>
+						<li class="header__navigation-item"><a href="html/explore.html" class="header__navigation-link">Explore</a></li>
+						<li class="header__navigation-item"><a href="html/agency.html" class="header__navigation-link">Agency</a></li>
+					</ul>
+					
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="container">
+						<hgroup class="hero__heading">
+							<h1 class="hero__title heading h1">Discover your perfect home</h1>
+							<p class="hero__heading-text paragraph paragraph--body-regular">Find the ideal property that matches your lifestyle and budget in just a few clicks</p>
+						</hgroup>
+						<div class="hero__search search">
+							<div class="hero__search-toggle-buttons search__toggle-buttons">
+								<button class="hero__search-toggle-button search__toggle-button hero__search-toggle-button--selected button button--M">Sell</button>
+								<button class="hero__search-toggle-button search__toggle-button button button--M">Rent</button>
+							</div>
+							<div class="hero__search-searchbox search__searchbox">
+								<div class="hero__search-searchbox-item search__searchbox-item">
+									<label class="paragraph paragraph--body-medium" for="#location">Location</label>
+									<select name="location" id="location">
+										<option value="#">option1</option>
+										<option value="#">option2</option>
+										<option value="#">option3</option>
+									</select>
+								</div>
+								<div class="hero__search-searchbox-item search__searchbox-item">
+									<label class="paragraph paragraph--body-medium" for="#type">Type</label>
+									<select name="type" id="type">
+										<option value="#">option1</option>
+										<option value="#">option2</option>
+										<option value="#">option3</option>
+									</select>
+								</div>
+								<div class="hero__search-searchbox-item search__searchbox-item">
+									<label class="paragraph paragraph--body-medium" for="#range">Range</label>
+									<input class="paragraph paragraph--body-regular" type="text" name="range" id="range" placeholder="$106 - $948">
+								</div>
+								<button class="hero__search-button search__searchbox-button button button--M">
+									<span>Search</span>
+									<img src="img/icons/search_icon.svg" alt="search-icon">
+								</button>
+							</div>
+						</div>
+				</div>
+			</section>
+			<section class="listings">
+				<div class="container">
+					<div class="listings__heading">
+						<h2 class="listings__title heading h2">Newest Listings</h2>
+						<a class="button button--XL" href="#">View All</a>
+					</div>
+					<ul class="listings__cards">
+						<li class="listings__card card">
+							<div class="listings__card-image card__image"></div>
+							<strong class="listings__card-title card__title heading h5"><a href="#">Grand Family House</a></strong>
+							<address class="listings__card-location card__location">Ohio St. South Gate, California</address>
+							<div class="listings__card-inner card__inner">
+								<p class="listings__card-price card__price heading h5">$350</p>
+								<p class="listings__card-rating card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="listings__card card">
+							<div class="listings__card-image card__image"></div>
+							<strong class="listings__card-title card__title heading h5"><a href="#">Grand Family House</a></strong>
+							<address class="listings__card-location card__location">Ohio St. South Gate, California</address>
+							<div class="listings__card-inner card__inner">
+								<p class="listings__card-price card__price heading h5">$350</p>
+								<p class="listings__card-rating card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="listings__card card">
+							<div class="listings__card-image card__image"></div>
+							<strong class="listings__card-title card__title heading h5"><a href="#">Grand Family House</a></strong>
+							<address class="listings__card-location card__location">Ohio St. South Gate, California</address>
+							<div class="listings__card-inner card__inner">
+								<p class="listings__card-price card__price heading h5">$350</p>
+								<p class="listings__card-rating card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="listings__card card">
+							<div class="listings__card-image card__image"></div>
+							<strong class="listings__card-title card__title heading h5"><a href="#">Grand Family House</a></strong>
+							<address class="listings__card-location card__location">Ohio St. South Gate, California</address>
+							<div class="listings__card-inner card__inner">
+								<p class="listings__card-price card__price heading h5">$350</p>
+								<p class="listings__card-rating card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__columns container">
+					<div class="advantages__column">
+						<h2 class="advantages__title heading h3">We help you to find your dream house</h2>
+						<div class="advantages__column-image"></div>
+					</div>
+					<div class="advantages__column">
+						<p class="advantages__column-text paragraph paragraph--body-regular">
+							Our dedicated team of real estate professionals is committed to helping you find the perfect property. We combine local expertise with personalized service to ensure your complete satisfaction.
+						</p>
+						<div class="advantages__spoiler">
+							<details class="advantages__spoiler-item">
+								<summary class="advantages__spoiler-item-title heading h5">Lifetime Warranty</summary>
+								<p class="advantages__spoiler-item-text paragraph paragraph--caption-regular">
+									We stand behind every property we represent with our exclusive warranty program. Our detailed inspection process ensures that you're making a sound investment that will serve you for years to come.
+								</p>
+							</details>
+							<details class="advantages__spoiler-item">
+								<summary class="advantages__spoiler-item-title heading h5">cheapest compared to other competitors</summary>
+								<p class="advantages__spoiler-item-text paragraph paragraph--caption-regular">
+									Our competitive commission rates and innovative marketing approach allow us to offer exceptional value. We consistently outperform industry standards while maintaining the highest quality of service.
+								</p>
+							</details>
+							<details class="advantages__spoiler-item">
+								<summary class="advantages__spoiler-item-title heading h5">Strategic location</summary>
+								<p class="advantages__spoiler-item-text paragraph paragraph--caption-regular">
+									We specialize in properties with excellent accessibility to schools, shopping centers, and transportation. Our database includes prime locations that combine convenience with long-term appreciation potential.
+								</p>
+							</details>
+							<details class="advantages__spoiler-item">
+								<summary class="advantages__spoiler-item-title heading h5">Low tax</summary>
+								<p class="advantages__spoiler-item-text paragraph paragraph--caption-regular">
+									Discover properties in areas with favorable tax structures that maximize your investment. Our experts can guide you through tax incentives and benefits available in different neighborhoods and municipalities.
+								</p>
+							</details>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="container">
+					<h2 class="visually-hidden">Reviews</h2>
+					<div class="reviews__carousel">
+						<div class="reviews__review">
+							<div class="reviews__review-inner">
+								<strong class="reviews__review-title heading h3">nice and comfortable house for family</strong>
+								<p class="reviews__review-text paragraph paragraph--body-regular">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+								<div class="reviews__review-rating"></div>
+								<p class="reviews__review-author heading h5">park Tea Hyung</p>
+								<p class="reviews__review-author-profession paragraph paragraph--body-regular">Pedagang Bakso</p>
+							</div>
+							<div class="reviews__review-image"></div>
+						</div>
+						<div class="reviews__carousel-controls">
+							<button class="reviews__carousel-prev"><img src="img/icons/left_arrow.svg" alt="previous"></button>
+							<button class="reviews__carousel-next"><img src="img/icons/right_ arrow.svg" alt="next"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="container">
+					<h2 class="contact__title heading h3">get luxury and cheap housing and guaranteed forever</h2>
+					<a class="contact__link button button--M" href="#">Contact Now</a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<a href="index.html" class="footer__logo"><img src="img/icons/footer_logo_dummy.svg" alt="logo"></a>
+				<div class="footer__inner">
+					<div class="footer__textbox">
+						<strong class="footer__textbox-title heading h4">Make your home more modern</strong>
+						<p class="footer__textbox-text pargaraph pargaraph--body-regular">
+							We pride ourselves on connecting clients with properties that truly feel like home. Our customer-centered approach ensures your real estate journey is smooth and successful from start to finish.
+						</p>
+					</div>
+					<dl class="footer__links">
+						<dt class="footer__links-title heading h5">Social Media</dt>
+						<dd>
+							<ul class="footer__links-list">
+								<li class="footer__links-list-item"><a class="footer__links-list-link" href="https://www.facebook.com/">Facebook</a></li>
+								<li class="footer__links-list-item"><a class="footer__links-list-link" href="https://www.instagram.com/">Instagram</a></li>
+								<li class="footer__links-list-item"><a class="footer__links-list-link" href="https://x.com/">Twitter</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-list-item"><a href="index.html" class="footer__menu-list-link">Home</a></li>
+						<li class="footer__menu-list-item"><a href="html/explore.html" class="footer__menu-list-link">Explore</a></li>
+						<li class="footer__menu-list-item"><a href="html/agency.html" class="footer__menu-list-link">Agency</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.js" type="module"></script>
+</body>
+</html>

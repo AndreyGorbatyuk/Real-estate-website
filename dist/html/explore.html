@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Explore</title>
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/explore.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<div class="header__container container">
+				<a href="../index.html" class="header__logo"><img src="../img/icons/logo_dummy.svg" alt="logo"></a>
+				<button class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<nav class="header__navigation">
+					<button class="header__navigation-close-btn">
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="header__navigation-list">
+						<li class="header__navigation-item"><a href="../index.html" class="header__navigation-link">Home</a></li>
+						<li class="header__navigation-item header__navigation-item--active"><a href="explore.html" class="header__navigation-link">Explore</a></li>
+						<li class="header__navigation-item"><a href="agency.html" class="header__navigation-link">Agency</a></li>
+					</ul>
+					
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<section class="explore">
+				<div id="map"></div>
+				<div class="explore__search-wrapper">
+					<div class="explore__search search">
+						<div class="explore__search-toggle-buttons search__toggle-buttons">
+							<button class="explore__search-toggle-button explore__search-toggle-button--selected search__toggle-button button button--M">Sell</button>
+							<button class="explore__search-toggle-button search__toggle-button button button--M">Rent</button>
+						</div>
+						<div class="explore__search-searchbox search__searchbox">
+							<div class="explore__search-searchbox-item search__searchbox-item">
+								<label for="#location" class="paragraph paragraph--body-medium">Location</label>
+								<select name="location" id="location">
+									<option value="">option1</option>
+									<option value="">option2</option>
+									<option value="">option3</option>
+								</select>
+							</div>
+							<div class="explore__search-searchbox-item search__searchbox-item">
+								<label for="#type" class="paragraph paragraph--body-medium">Type</label>
+								<select name="type" id="type">
+									<option value="">option1</option>
+									<option value="">option2</option>
+									<option value="">option3</option>
+								</select>
+							</div>
+							<div class="explore__search-searchbox-item search__searchbox-item">
+								<label for="#range" class="paragraph paragraph--body-medium">Range</label>
+								<select name="range" id="range">
+									<option value="">option1</option>
+									<option value="">option2</option>
+									<option value="">option3</option>
+								</select>
+							</div>
+							<button class="explore__search-button search__searchbox-button button button--M">
+								<span>Search</span>
+								<img src="../img/icons/search_icon.svg" alt="search-icon">
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="search-results">
+				<div class="container">
+					<strong class="search-results__title heading h4">Result for “<span>South Gate</span>”</strong>
+					<div class="search-results__controls">
+						<strong class="search-results__results-quantity paragraph paragraph--label-regular">Displaying <span>18</span> Results</strong>
+						<select class="search-results__sort" name="sort" id="sort">
+							<option value="default">sort1</option>
+							<option value="cheapest">sort2</option>
+							<option value="most_expensive">sort3</option>
+						</select>
+					</div>
+					<ul class="search-results__cards">
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="card__price heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+						<li class="card">
+							<div class="card__image"></div>
+							<div class="card__title heading h5"><a href="#">Grand Family House</a></div>
+							<div class="card__location">Ohio St. South Gate, California</div>
+							<div class="card__inner">
+								<p class="heading h5">$350</p>
+								<p class="card__rating paragraph paragraph--body-semibold">4.8</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<a href="index.html" class="footer__logo"><img src="../img/icons/footer_logo_dummy.svg" alt="logo"></a>
+				<div class="footer__inner">
+					<div class="footer__textbox">
+						<strong class="footer__textbox-title heading h4">Make your home more modern</strong>
+						<p class="footer__textbox-text pargaraph pargaraph--body-regular">
+							We pride ourselves on connecting clients with properties that truly feel like home. Our customer-centered approach ensures your real estate journey is smooth and successful from start to finish.
+						</p>
+					</div>
+					<dl class="footer__links">
+						<dt class="footer__links-title heading h5">Social Media</dt>
+						<dd>
+							<ul class="footer__links-list">
+								<li class="footer__links-list-item"><a class="footer__links-list-link" href="https://www.facebook.com/">Facebook</a></li>
+								<li class="footer__links-list-item"><a class="footer__links-list-link" href="https://www.instagram.com/">Instagram</a></li>
+								<li class="footer__links-list-item"><a class="footer__links-list-link" href="https://x.com/">Twitter</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-list-item"><a href="../index.html" class="footer__menu-list-link">Home</a></li>
+						<li class="footer__menu-list-item"><a href="explore.html" class="footer__menu-list-link">Explore</a></li>
+						<li class="footer__menu-list-item"><a href="agency.html" class="footer__menu-list-link">Agency</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<script src="../js/script.js" type="module"></script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@use "sass:map";
+@use "../forwarded" as *;
+@mixin font($font_name, $file_name, $weight : 400, $style : normal) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+		url("../fonts/#{$file_name}.woff") format("woff"),
+		url("../fonts/#{$file_name}.ttf") format('truetype');
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+// local variables, scoped only for this file
+$_headings: (
+  1: (
+			// font-size [36px : 72px]  for viewport [375px : 1920px]
+			fontSize: clamp(2.25rem, 1.704rem + 2.33vw, 4.5rem),
+			lineHeight: toParts(72, 96)
+		),
+  2: (
+			// font-size [33px : 64px]  for viewport [375px : 1920px]
+			fontSize: clamp(2.063rem, 1.592rem + 2.01vw, 4rem),
+			lineHeight: toParts(64, 88)
+		),
+  3: (
+			// font-size [28px : 48px]  for viewport [375px : 1920px]
+			fontSize: clamp(1.75rem, 1.447rem + 1.29vw, 3rem),
+			lineHeight: toParts(48, 64)
+		),
+  4: (
+			// font-size [22px : 32px]  for viewport [375px : 1920px]
+			fontSize: clamp(1.375rem, 1.223rem + 0.65vw, 2rem),
+			lineHeight: toParts(32, 48)
+		),
+  5: (
+			// font-size [18px : 24px]  for viewport [375px : 1920px]
+			fontSize: clamp(1.125rem, 1.034rem + 0.39vw, 1.5rem),
+			lineHeight: toParts(24, 32)
+		)
+);
+
+@mixin heading($level) {
+  $settings: map-get($_headings, $level);
+
+  font-size: map-get($settings, fontSize);
+  line-height: map-get($settings, lineHeight);
+}
+@mixin generateHeadingClasses(){
+	@for $i from 1 through 5{
+		.h#{$i}{
+			@include heading($i);
+		}
+	}
+}
+
+$_buttonPaddings: (
+  "XL": ("vertical": 24, "horizontal": 40),
+  "L":  ("vertical": 16, "horizontal": 40),
+  "M":  ("vertical": 12, "horizontal": 32),
+  "S":  ("vertical": 8,  "horizontal": 32),
+  "XS": ("vertical": 4,  "horizontal": 24)
+);
+
+@mixin generateButtons() {
+  @each $size, $padding in $_buttonPaddings {
+    $vertical: map-get($padding, "vertical");
+    $horizontal: map-get($padding, "horizontal");
+
+    .button--#{$size} {padding: toEM(16, $vertical) toEM(16, $horizontal);}
+  }
+}
+
+$_textStyles: (
+  semibold: (
+    body:    (fontSize: 16, lineHeight: 32),
+    caption: (fontSize: 14, lineHeight: 24),
+    label:   (fontSize: 12, lineHeight: 24)
+  ),
+  medium: (
+    body:    (fontSize: 16, lineHeight: 32),
+    caption: (fontSize: 14, lineHeight: 24),
+    label:   (fontSize: 12, lineHeight: 24)
+  ),
+  regular: (
+    body:    (fontSize: 16, lineHeight: 26),
+    caption: (fontSize: 14, lineHeight: 24),
+    label:   (fontSize: 12, lineHeight: 24)
+  )
+);
+
+@mixin textStyle($weight, $type) {
+  $style: map-get(map-get($_textStyles, $weight), $type);
+
+  font-size: toREM(map-get($style, fontSize));
+  font-weight: if($weight == semibold, 600,
+              if($weight == medium, 500, 400));
+  line-height: toParts(map-get($style, fontSize), map-get($style, lineHeight));
+}

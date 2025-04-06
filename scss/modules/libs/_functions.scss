@@ -1,0 +1,40 @@
+@use 'sass:math';
+
+// Переводит значения из PX в REM
+// Converts PX units to REM units
+@function toREM($pxVal) {
+	$result: math.div($pxVal, 16)+rem;
+	@return $result;
+}
+
+// Переводит значения из PX в EM.
+// Второй параметр отвечает за базовое значение, относительно которого произойдет конвертация в EM
+
+// Converts PX units to EM units
+// The second parameter is responsible for the base value,relative to which the conversion to EM will occur
+@function toEM($pxVal, $targetVal: null) {
+	// pxVal - значение в пикселях, которое нужно перевести в EM. При этом, базовое значение для перевода = значению шрифта по умолчанию(16)
+	// targetVal - значение в пикселях для размера шрифта.
+	$result: 0;
+	@if $targetVal == null {
+		$result: math.div($pxVal, 16)+em;
+	}
+	@else {
+		$result: math.div($targetVal, $pxVal)+em;
+	}
+	@return $result;
+}
+
+// Вычисляет, сколько процентов составляет число $targetVal от числа $baseVal
+// Calculates the percentage of $targetVal from $baseVal
+@function PXtoPrc($targetVal, $baseVal) {
+	$result: math.div($targetVal, $baseVal) * 100%;
+	@return $result;
+}
+
+// Переводит пиксельное значение line-height в относительное, равное пропорциональному множителю
+// Converts line-height's pixel units to a relative value equal to a proportional multiplier
+@function toParts($currFontSize, $targLineHeight) {
+	$result: math.div($targLineHeight, $currFontSize);
+	@return $result;
+}

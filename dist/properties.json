@@ -1,0 +1,384 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Studio in Houston",
+      "type": "studio",
+      "status": "for rent",
+      "price": 2729,
+      "location": {
+        "city": "Houston",
+        "state": "TX",
+        "country": "USA"
+      },
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area": 227,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/studio1_1.jpg",
+        "images/studio1_2.jpg"
+      ],
+      "description": "Compact studio ideal for singles or students."
+    },
+    {
+      "id": 2,
+      "title": "Office in Houston",
+      "type": "office",
+      "status": "for rent",
+      "price": 4965,
+      "location": {
+        "city": "Houston",
+        "state": "TX",
+        "country": "USA"
+      },
+      "bedrooms": null,
+      "bathrooms": null,
+      "area": 188,
+      "amenities": [],
+      "images": [
+        "images/office2_1.jpg",
+        "images/office2_2.jpg"
+      ],
+      "description": "Well-lit office space in a commercial area."
+    },
+    {
+      "id": 3,
+      "title": "House in Phoenix",
+      "type": "house",
+      "status": "for sale",
+      "price": 351767,
+      "location": {
+        "city": "Phoenix",
+        "state": "AZ",
+        "country": "USA"
+      },
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area": 143,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/house3_1.jpg",
+        "images/house3_2.jpg"
+      ],
+      "description": "Spacious family house with a garden and garage."
+    },
+    {
+      "id": 4,
+      "title": "House in Phoenix",
+      "type": "house",
+      "status": "for sale",
+      "price": 429419,
+      "location": {
+        "city": "Phoenix",
+        "state": "AZ",
+        "country": "USA"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area": 141,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/house4_1.jpg",
+        "images/house4_2.jpg"
+      ],
+      "description": "Spacious family house with a garden and garage."
+    },
+    {
+      "id": 5,
+      "title": "House in Houston",
+      "type": "house",
+      "status": "for sale",
+      "price": 446898,
+      "location": {
+        "city": "Houston",
+        "state": "TX",
+        "country": "USA"
+      },
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "area": 175,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/house5_1.jpg",
+        "images/house5_2.jpg"
+      ],
+      "description": "Spacious family house with a garden and garage."
+    },
+    {
+      "id": 6,
+      "title": "Studio in Phoenix",
+      "type": "studio",
+      "status": "for rent",
+      "price": 998,
+      "location": {
+        "city": "Phoenix",
+        "state": "AZ",
+        "country": "USA"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area": 163,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/studio6_1.jpg",
+        "images/studio6_2.jpg"
+      ],
+      "description": "Compact studio ideal for singles or students."
+    },
+    {
+      "id": 7,
+      "title": "Apartment in Philadelphia",
+      "type": "apartment",
+      "status": "for rent",
+      "price": 4319,
+      "location": {
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA"
+      },
+      "bedrooms": 1,
+      "bathrooms": 3,
+      "area": 85,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/apartment7_1.jpg",
+        "images/apartment7_2.jpg"
+      ],
+      "description": "A modern apartment with a great view and excellent connectivity."
+    },
+    {
+      "id": 8,
+      "title": "Apartment in Philadelphia",
+      "type": "apartment",
+      "status": "for sale",
+      "price": 346925,
+      "location": {
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA"
+      },
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area": 86,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/apartment8_1.jpg",
+        "images/apartment8_2.jpg"
+      ],
+      "description": "A modern apartment with a great view and excellent connectivity."
+    },
+    {
+      "id": 9,
+      "title": "Studio in Houston",
+      "type": "studio",
+      "status": "for rent",
+      "price": 1754,
+      "location": {
+        "city": "Houston",
+        "state": "TX",
+        "country": "USA"
+      },
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "area": 68,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/studio9_1.jpg",
+        "images/studio9_2.jpg"
+      ],
+      "description": "Compact studio ideal for singles or students."
+    },
+    {
+      "id": 10,
+      "title": "Apartment in Chicago",
+      "type": "apartment",
+      "status": "for rent",
+      "price": 2089,
+      "location": {
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+      },
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "area": 174,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/apartment10_1.jpg",
+        "images/apartment10_2.jpg"
+      ],
+      "description": "A modern apartment with a great view and excellent connectivity."
+    },
+    {
+      "id": 11,
+      "title": "Studio in Chicago",
+      "type": "studio",
+      "status": "for rent",
+      "price": 2034,
+      "location": {
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+      },
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": 187,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/studio11_1.jpg",
+        "images/studio11_2.jpg"
+      ],
+      "description": "Compact studio ideal for singles or students."
+    },
+    {
+      "id": 12,
+      "title": "Office in Chicago",
+      "type": "office",
+      "status": "for sale",
+      "price": 72337,
+      "location": {
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+      },
+      "bedrooms": null,
+      "bathrooms": null,
+      "area": 77,
+      "amenities": [],
+      "images": [
+        "images/office12_1.jpg",
+        "images/office12_2.jpg"
+      ],
+      "description": "Well-lit office space in a commercial area."
+    },
+    {
+      "id": 13,
+      "title": "Apartment in Phoenix",
+      "type": "apartment",
+      "status": "for sale",
+      "price": 276344,
+      "location": {
+        "city": "Phoenix",
+        "state": "AZ",
+        "country": "USA"
+      },
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area": 110,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/apartment13_1.jpg",
+        "images/apartment13_2.jpg"
+      ],
+      "description": "A modern apartment with a great view and excellent connectivity."
+    },
+    {
+      "id": 14,
+      "title": "Villa in Chicago",
+      "type": "villa",
+      "status": "for sale",
+      "price": 249207,
+      "location": {
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+      },
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": 211,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/villa14_1.jpg",
+        "images/villa14_2.jpg"
+      ],
+      "description": "Luxurious villa with private pool and sea view."
+    },
+    {
+      "id": 15,
+      "title": "House in Phoenix",
+      "type": "house",
+      "status": "for rent",
+      "price": 1896,
+      "location": {
+        "city": "Phoenix",
+        "state": "AZ",
+        "country": "USA"
+      },
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "area": 172,
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Air Conditioning",
+        "Furnished"
+      ],
+      "images": [
+        "images/house15_1.jpg",
+        "images/house15_2.jpg"
+      ],
+      "description": "Spacious family house with a garden and garage."
+    }
+  ]
+}

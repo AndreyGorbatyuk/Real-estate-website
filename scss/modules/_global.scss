@@ -1,0 +1,220 @@
+@use './forwarded' as *;
+@use '../modules/libs/mixins' as mix;
+body{
+	background-color: $tertiaryWhite;
+	font-family: $mainFont;
+}
+.page{
+	position: relative;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+section{
+	// adaptive value in range [40px:80px] for vewport [375px:1920px]
+	padding:clamp(2.5rem, 1.893rem + 2.59vw, 5rem) 0;
+}
+main{flex: 1 0 auto;}
+.container {
+	max-width: toEM($containerWidth + $containerPadding);
+	padding: 0 $containerSidePadding;
+	margin: 0 auto;
+}
+.visually-hidden{
+	width: 1px;
+	height: 10px;
+	overflow: hidden;
+	opacity: 0;
+	bottom: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+}
+.button{
+	background-color: $secondaryColor50;
+	font-size: toREM(16);
+	line-height: toParts(16, 24);
+	border: 1px solid transparent;
+	transition: all .3s ease 0s;
+	background-color: $secondaryColor50;
+	color: $tertiaryWhite;
+	border-radius: toEM(16, 8);
+	&:hover, &:focus{
+		background-color: transparent;
+		border: 1px solid $secondaryColor50;
+		color: $secondaryColor50;
+	}
+}
+@include mix.generateButtons();
+
+.heading{
+	font-family: $mainFont;
+	font-weight: 700;
+	// color: $tertiaryNavy;
+}
+@include mix.generateHeadingClasses();
+.paragraph{
+	font-family: $secondaryFont;
+}
+.paragraph--body-semibold{@include mix.textStyle("semibold", "body")}
+.paragraph--body-medium{@include mix.textStyle("medium", "body")}
+.paragraph--body-regular{@include mix.textStyle("regular", "body")}
+
+.paragraph--label-semibold{@include mix.textStyle("semibold", "label")}
+.paragraph--label-medium{@include mix.textStyle("medium", "label")}
+.paragraph--label-regular{@include mix.textStyle("regular", "label")}
+
+.paragraph--caption-semibold{@include mix.textStyle("semibold", "caption")}
+.paragraph--caption-medium{@include mix.textStyle("medium", "caption")}
+.paragraph--caption-regular{@include mix.textStyle("regular", "caption")}
+
+.locked{
+	overflow: hidden;
+}
+
+.search {
+	max-width: 940px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__toggle-buttons {
+		max-width: toREM(270);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		background-color: $tertiaryWhite;
+		padding: toEM(16) toEM(40);
+		border-top-left-radius: toREM(8);
+		border-top-right-radius: toREM(8);
+	}
+	&__searchbox {
+		width: 100%;
+		background-color: $tertiaryWhite;
+		padding: toEM(24);
+		border-radius: toREM(8);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+	}
+	&__searchbox-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: $tertiaryNavy;
+		label{
+			margin-bottom: toEM(15);
+		}
+		input{
+			padding: toEM(10) toEM(16);
+			border: 1px solid $tertiaryLightgray;
+			border-radius: toEM(8);
+			transition: border-color .3s ease 0s;
+			&:hover, &:focus{
+				border-color: $tertiaryNavy;
+			}
+		}
+	}
+	&__searchbox-button{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		img{
+			width: 24px;
+			height: 24px;
+			transition: all .3s ease 0s;			
+		}
+		&:hover, &:focus{
+			gap: 0;
+			img{
+				width: 0;
+				height: 0;
+			}
+		}
+	}
+}
+.card {
+	color: $tertiaryNavy;
+	border-radius: toREM(16);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: toEM(16);
+	transition: box-shadow .3s ease 0s;
+	&:hover{
+		box-shadow: 0px 2px 48px 0px rgba(180, 178, 178, 0.25);;
+	}
+	&__image {
+		height: 265px;
+		background-color: $tertiaryLightgray;
+		border-radius: toREM(16);
+		width: 100%;
+		margin-bottom: toEM(16);
+	}
+	&__title {
+		display: block;
+		margin-bottom: toEM(22, 8);
+		a{
+			color: inherit;
+			transition: color .3s ease 0s;
+			&:hover, &:focus{
+				color: $secondaryColor70;
+			}
+		}
+	}
+	&__location {
+		font-family: $secondaryFont;
+		font-size: toREM(12);
+		font-style: normal;
+		color: $tertiaryDarkGray;
+		line-height: toParts(12, 24);
+		padding-left: toEM(12, 28);
+		margin-bottom: toEM(12, 10);
+		position: relative;
+		&::before{
+			content: "";
+			width: 14px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: {
+				image: url("../img/icons/location.png");
+				repeat: no-repeat;
+				size: cover;
+				position: center;
+			}
+		}
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-width: 100%;
+	}
+	&__price {
+		color: inherit;
+	}
+	&__rating {
+		position: relative;
+		padding-left: toEM(16, 24);
+		&::before{
+			content: '';
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translate(0, 30%);
+			background: {
+				image: url("../img/icons/rate_icon.svg");
+				repeat: no-repeat;
+				size: cover;
+				position: center;
+			}
+		}
+	}
+}

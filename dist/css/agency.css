@@ -1,0 +1,148 @@
+.hero {
+  height: 70dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(18, 55, 99, 0.5);
+  color: #ffffff;
+  text-align: center;
+}
+.hero__title {
+  margin-bottom: 0.5em;
+}
+.agency {
+  color: #123763;
+  padding-bottom: clamp(2.5rem, 0.68rem + 7.77vw, 10rem);
+}
+.agency__container {
+  display: grid;
+  grid-template-rows: 0.5fr 2fr;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+.agency__purposes {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.agency__purpose {
+  padding: clamp(1.25rem, 0.947rem + 1.29vw, 2.5rem) clamp(0.75rem, 0.568rem + 0.78vw, 1.5rem);
+  background-color: #ffffff;
+  border: 1px solid #E6E6E6;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 1rem;
+  transition: border 0.3s ease 0s, box-shadow 0.3s ease 0s;
+}
+.agency__purpose:hover {
+  border: 1px solid transparent;
+  box-shadow: 12px 60px 106px -24px rgba(188, 188, 188, 0.2);
+}
+.agency__purpose-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.875em;
+}
+.agency__purpose-image {
+  height: 25rem;
+}
+.agency__purpose-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.agency__purpose-textbox {
+  display: flex;
+  flex-direction: column;
+}
+.agency__purpose-title {
+  margin-bottom: 0.9090909091em;
+}
+.agency__purpose-location, .agency__purpose-contact, .agency__purpose-email {
+  color: #6D6D6D;
+  display: block;
+  padding-left: 1.25em;
+  position: relative;
+}
+.agency__purpose-location::before, .agency__purpose-contact::before, .agency__purpose-email::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.agency__purpose-contact, .agency__purpose-email {
+  transition: color 0.3s ease 0s;
+}
+.agency__purpose-contact:hover, .agency__purpose-contact:focus, .agency__purpose-email:hover, .agency__purpose-email:focus {
+  color: #EB7000;
+}
+.agency__purpose-location::before {
+  width: 15px;
+  height: 20px;
+  top: 3px;
+  background-image: url("../img/icons/location.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.agency__purpose-contact::before {
+  width: 18px;
+  height: 18px;
+  transform: translateY(30%);
+  background-image: url("../img/icons/call_icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.agency__purpose-email::before {
+  width: 24px;
+  height: 24px;
+  transform: translate(-30%, 15%);
+  background-image: url("../img/icons/email.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.agency__purpose-link {
+  display: inline-block;
+  text-align: center;
+}
+.agency__categories {
+  order: 1;
+}
+.agency__categories-title {
+  margin-bottom: 0.5em;
+}
+.agency__categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  border: 1px solid #E6E6E6;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  padding: 1.5em;
+}
+.agency__categories-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+  cursor: pointer;
+}
+.agency__categories-list-item-name {
+  display: block;
+}
+.agency__categories-list-item-quantity {
+  color: #6D6D6D;
+}
+
+/*# sourceMappingURL=agency.css.map */

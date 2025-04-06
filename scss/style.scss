@@ -1,0 +1,80 @@
+@use './modules/modules' as *;
+
+
+// @use './sections/';
+// В каждый файл секции подключать файл _forwarded.scss - содержит обязательно необходимые переменные и функции
+@media(min-width: $breakpoint425){
+	#map{
+		height: 70dvh;
+	}
+	.explore {
+		&__search-wrapper {transform: translate(0%, -10%);}
+		
+	}
+}
+@media(min-width: $breakpoint576){
+	.agency{
+		&__purpose-inner{
+			flex-direction: row;
+		}
+		&__purpose-image{
+			height: toREM(250);
+		}
+	}
+}
+@media(min-width: $breakpoint768){
+	.search{
+		&__searchbox{
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+	.advantages{
+		&__columns{
+			grid-template: 1fr / repeat(2, 1fr);
+			&__column {
+				&:nth-child(1){order: 2}
+				&:nth-child(2){order: 1}
+			}
+		}
+	}
+	.reviews{
+		&__review{
+			flex-direction: row;
+			align-items: center;
+		}
+		&__review-image{
+			flex: 1 0 50%;
+			min-height: 500px;
+		}
+	}
+	.agency{
+		&__purpose-image{height: toREM(350);}
+	}
+}
+@media(min-width: $breakpoint992){
+	.reviews{
+		&__review-image{
+			min-height: 600px;
+		}
+	}
+}
+@media(min-width: $breakpoint1024){
+	.agency{
+		&__container{
+			grid-template-rows: 1fr;
+			grid-template-columns: 1fr 0.7fr;
+		}
+		&__purposes{order: 1;}
+		&__categories{order: 2}
+	}
+}
+/* @media(min-width: $breakpoint1200){
+	.agency{
+		&__container{
+			grid-template-columns: 1fr 0.7fr;
+			gap: toREM(40);
+		}
+	}
+} */
